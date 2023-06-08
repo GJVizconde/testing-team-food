@@ -16,22 +16,6 @@ module.exports = (sequelize) => {
 				type: DataTypes.STRING,
 				allowNull: false,
 			},
-			image: {
-				type: DataTypes.STRING,
-				allowNull: false,
-			},
-			summary: {
-				type: DataTypes.TEXT,
-				allowNull: false,
-			},
-			healthScore: {
-				type: DataTypes.INTEGER,
-				allowNull: false,
-			},
-			steps: {
-				type: DataTypes.TEXT,
-				allowNull: false,
-			},
 			createdInDB: {
 				type: DataTypes.BOOLEAN,
 				defaultValue: true,
