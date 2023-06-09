@@ -23,8 +23,7 @@ const LandingPage = () => {
 				<div className='flex justify-center items-center mt-5 mb-5 p-5'>
 					<button
 						className={`text-cyan-50 font-Satisfy w-40 text-2xl ${styles['animate-color-change']} p-2 rounded-xl hover:opacity-100 border-2 transition duration-200`}
-						onClick={() => router.push('/home')}
-					>
+						onClick={() => router.push('/home')}>
 						<span className={kalam.className}>Start</span>
 					</button>
 				</div>
