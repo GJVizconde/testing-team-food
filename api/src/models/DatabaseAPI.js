@@ -3,40 +3,41 @@ const { DataTypes, UUIDV4 } = require("sequelize");
 // Luego le injectamos la conexion a sequelize.
 module.exports = (sequelize) => {
   // defino el modelo
-  sequelize.define("recipe", {
+  sequelize.define("databaseapi", {
     id: {
-      type:DataTypes.UUID,
+      type:DataTypes.INTEGER,
       allowNull:false,
       unique:true,
       primaryKey: true,
-      defaultValue: UUIDV4
+      
     },
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.STRING(1000),
       allowNull: false,
     },
     image:{
-      type:DataTypes.STRING,
+      type:DataTypes.STRING(1000),
     },
     dishTypes:{
-      type:DataTypes.ARRAY(DataTypes.STRING),
+      type:DataTypes.ARRAY(DataTypes.STRING(1000)),
       allowNull: false,
 
     },
     types:{
-      type:DataTypes.STRING,
+      type:DataTypes.STRING(1000),
       allowNull: false,
     },
     healthScore:{
       type:DataTypes.INTEGER,
       allowNull: false,
+      
     },
     summary:{
-      type:DataTypes.TEXT,
+      type:DataTypes.TEXT(1000),
       allowNull: false,
     },
     steps:{
-      type:DataTypes.ARRAY(DataTypes.STRING),
+      type:DataTypes.ARRAY(DataTypes.STRING(1000)),
       allowNull: false,
     },
     createdInDb: {
