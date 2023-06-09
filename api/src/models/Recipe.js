@@ -29,7 +29,7 @@ module.exports = (sequelize) => {
 				allowNull: false,
 			},
 			steps: {
-				type: DataTypes.TEXT,
+				type: DataTypes.ARRAY(DataTypes.STRING(1000)),
 				allowNull: false,
 			},
 			createdInDB: {
