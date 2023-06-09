@@ -1,0 +1,20 @@
+@keyframes color-change {
+    0% {
+      background-color: rgba(52, 211, 153, 0.700); /* Color inicial */
+    }
+    50% {
+      background-color: rgba(255, 99, 71, 0.700); /* Segundo color */
+    }
+    100% {
+      background-color: rgb(52, 211, 153, 0.700); /* Color inicial */
+    }
+  }
+  
+  .animate-color-change {
+    animation: color-change 2s infinite;
+  }
+
+  .animate-color-change:hover {
+    animation: none;
+    background-color: rgba(52, 211, 153);
+  }
