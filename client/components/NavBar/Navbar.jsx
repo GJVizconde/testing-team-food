@@ -46,7 +46,7 @@ const NavBar = () => {
 
 					<input
 						type='text'
-						className=' h-11 pl-3 rounded-full w-full outline-none text-gray-700 text-lg dark:bg-slate-700 dark:text-slate-300'
+						className=' h-11 pl-3 rounded-full focus:ring-4 focus:ring-orange-500 dark:focus:ring-4 dark:focus:ring-white w-full outline-none text-gray-700 text-lg dark:bg-slate-700 dark:text-slate-300'
 					/>
 				</div>
 
