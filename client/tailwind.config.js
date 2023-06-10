@@ -34,9 +34,11 @@ module.exports = {
         },
         boxShadow: {
           "custom": "0 0 5px 2px gray"
-        }
-      }
+        },
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require(`@tailwindcss/typography`),
+  ],
 }
