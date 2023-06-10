@@ -1,10 +1,8 @@
-import LandingPage from "@/components/LandingPage/LandingPage";
-import React from "react";
+import LandingPage from '../components/LandingPage/LandingPage';
+import React from 'react';
 
 function IndexPage() {
-  return (
-      <LandingPage />
-  );
+	return <LandingPage />;
 }
 
 export default IndexPage;

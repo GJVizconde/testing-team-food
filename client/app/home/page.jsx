@@ -1,15 +1,18 @@
-import NavBar from "@/components/NavBar/Navbar";
+
+
 import Image from "next/image";
 import bgImage from "./images/bg_home.jpg";
 import { Contrail_One } from "next/font/google";
 import styles from "./home.module.css";
 import ButtonNewRecipe from "@/components/Buttons/CreateNewRecipe/ButtonNewRecipe";
+import NavBar from '../../components/NavBar/Navbar';
 
 const contrail = Contrail_One({
     subsets: ["latin"],
     weight: ["400"]
 })
 const Home = () => {
+
     return (
         <div >
             <header>
@@ -35,5 +38,6 @@ const Home = () => {
         </div>
     )
 }
+
 
 export default Home;
