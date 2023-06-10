@@ -8,7 +8,6 @@ import { AiOutlineLogin } from 'react-icons/ai';
 import { FiUserPlus } from 'react-icons/fi';
 import { useState } from 'react';
 
-
 const NavBar = () => {
 	const [themeDark, setThemeDark] = useState(false);
 
