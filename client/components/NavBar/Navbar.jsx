@@ -31,7 +31,7 @@ const NavBar = () => {
 				/>
 			</div>
 
-			<div className='flex justify-between pl-10 pr-10 w-3/4 lg:pl-40 lg:pr-40'>
+			<div className='flex justify-between w-3/4 lg:pl-40 lg:pr-40'>
 				<div className=' md:w-96 relative lg:w-2/5'>
 					<button
 						className='absolute flex justify-center items-center right-1 top-1  h-9 w-9 rounded-full p-1 text-black bg-aqua-400 shadow-boxShadow-custom'
@@ -45,7 +45,7 @@ const NavBar = () => {
 
 					<input
 						type='text'
-						className=' h-11 pl-3 rounded-full w-full outline-none text-gray-700 text-lg dark:bg-slate-700 dark:text-slate-300'
+						className=' h-11 pl-3 rounded-full focus:ring-4 focus:ring-orange-500 dark:focus:ring-4 dark:focus:ring-white w-full outline-none text-gray-700 text-lg dark:bg-slate-700 dark:text-slate-300'
 					/>
 				</div>
 
