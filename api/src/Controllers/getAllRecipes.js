@@ -22,7 +22,7 @@ const getAllRecipes = async () => {
 			return [...bdRecipes, ...mappingApiInfo];
 		else return 'theres nothing in the database, its strange';	
 	} catch (error) {
-		
+		throw new Error(error.message)
 	}
 };
 

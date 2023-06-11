@@ -1,5 +1,5 @@
 const { getAllRecipes } = require("../controllers/getAllRecipes")
-// const { getRecipesByName } = require("../controllers/getRecipesByName")
+ const { getRecipesByName } = require("../controllers/getRecipesByName")
 
 const getRecipes = async (req, res) => {
   const { name } = req.query;
