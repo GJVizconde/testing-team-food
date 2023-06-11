@@ -1,11 +1,11 @@
-
-
 import Image from "next/image";
 import bgImage from "./images/bg_home.jpg";
 import { Contrail_One } from "next/font/google";
 import styles from "./home.module.css";
 import ButtonNewRecipe from "../../components/Buttons/CreateNewRecipe/ButtonNewRecipe";
 import NavBar from '../../components/NavBar/Navbar';
+import Cards from "../../components/Cards/Cards";
+
 
 const contrail = Contrail_One({
     subsets: ["latin"],
@@ -28,9 +28,8 @@ const Home = () => {
                 <NavBar />
                 <ButtonNewRecipe contrail={contrail}/>
             </header>
-            <main>
-
-
+            <main className="relative bg-slate-200 dark:bg-slate-600">
+                <Cards />
             </main>
             <footer>
 
