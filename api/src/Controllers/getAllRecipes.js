@@ -10,19 +10,20 @@ const getAllRecipes = async () => {
 				`https://api.spoonacular.com/recipes/complexSearch?apiKey=${API_KEY}&addRecipeInformation=true`
 			)
 		).data;
-	
+
 		const realInfo = apiInfo.results;
+
 		const mappingApiInfo = infoMap(realInfo);
-	
+
 		// La parte de la BD
-	
+
 		const bdRecipes = await Recipe.findAll({ include: { model: Diet } });
-	
+
 		if (mappingApiInfo.length > 0 || bdRecipes.length > 0)
 			return [...bdRecipes, ...mappingApiInfo];
-		else return 'theres nothing in the database, its strange';	
+		else return 'theres nothing in the database, its strange';
 	} catch (error) {
-		throw new Error(error.message)
+		throw new Error(error.message);
 	}
 };
 
