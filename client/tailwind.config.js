@@ -33,12 +33,12 @@ module.exports = {
           500: "rgba(255, 255, 255, 0.5)"
         },
         boxShadow: {
-          "custom": "0 0 5px 2px gray"
+          "card": "0 0 5px 2px rgba(0, 0, 0, 0.3)"
         },
       },
     },
   },
   plugins: [
-    require(`@tailwindcss/typography`),
+    require(`@tailwindcss/typography`), require("autoprefixer")
   ],
 }
