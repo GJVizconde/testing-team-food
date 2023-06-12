@@ -3,7 +3,7 @@ const { getRecipesByName } = require("../controllers/getRecipesByName")
 const {getRecipesById} = require("../controllers/getRecipesById");
 const {GetbyIdDB} = require("../controllers/getRecipesByIdDB");
 const {PostNewReceta} = require("../controllers/POSTRecipesDB");
-
+const {GETdiets} = require("../controllers/getDiets");
 
 const getRecipes = async (req, res) => {
   const { name } = req.query;
@@ -37,7 +37,7 @@ const getById =  async (req,res)  => {
 
 // handler GETByIdDB>
 
-const getByIdDB = async (req,res) => {
+const getByIdDB = async (request,res) => {
   const {id} =  req.params
   try {
     const result = await GetbyIdDB(id)
@@ -68,7 +68,8 @@ const PostReceta = async (req,res) => {
   }
 }
 
-// handler GET DIET >
+
+
 
 
 
