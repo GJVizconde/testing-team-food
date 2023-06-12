@@ -13,7 +13,8 @@ module.exports = [
         img: "https://www.unileverfoodsolutions.com.mx/tendencias/de-mexico-para-el-mundo/platillos-mexicanos/top10-platillos/jcr:content/parsys/content-aside-footer/columncontrol/columnctrl_parsys_1/textimage/image.transform/jpeg-optimized/image.1592429873377.jpg",
         steps: 8, 
         description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. In voluptate beatae excepturi tenetur inventore iusto, iste, molestiae odit expedita deleniti ad velit temporibus. Officiis possimus doloremque voluptatem minus, distinctio unde magnam libero porro, corporis sapiente eius quae fugiat cum necessitatibus!",
-        cost: 22},
+        cost: 22
+    },
     {
         id: 3, 
         name: "Lebel",
