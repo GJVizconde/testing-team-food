@@ -1,6 +1,14 @@
 //Aqui deberia estar la ruta Diests
 
+const { Router } = require ("express");
+const { getDIET } = require("../handlers/Diests");
 
 
-//kñhibfvhj roifvnkernefnr/
-//hbfdvfvaerfñovowijg
+const DietsRoutes = Router();
+
+
+DietsRoutes.get("/", getDIET)
+
+
+
+module.exports = DietsRoutes;
