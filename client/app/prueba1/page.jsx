@@ -2,11 +2,13 @@
 
 import { useGetUsersQuery } from '../../redux/services/userApi';
 import { increment, decrement } from '../../redux/features/counterSlice';
-import { useAppDispatch, useAppSelector } from '../../redux/hooks';
+import { useDispatch, useSelector } from 'react-redux';
 
 const CounterTest = () => {
-	const count = useAppSelector((state) => state.counterReducer.counter);
-	const dispatch = useAppDispatch();
+	const count = useSelector((state) => state.counterReducer.counter);
+	const dispatch = useDispatch();
+	// const count = useAppSelector((state) => state.counterReducer.counter);
+	// const dispatch = useAppDispatch();
 
 	const { data, error, isLoading, isFetching } = useGetUsersQuery(null);
 
@@ -36,8 +38,8 @@ const CounterTest = () => {
 				Decrement
 			</button>
 
-			{data?.map((user) => (
-				<div>
+			{data?.map((user, index) => (
+				<div key={index}>
 					<p>{user.name}</p>
 					<p>{user.username}</p>
 					<p>{user.email}</p>

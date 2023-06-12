@@ -1,4 +1,5 @@
 
+
 // handler GET DIET >
 
 const { GETdiets } = require("../controllers/getDiets");
@@ -18,3 +19,6 @@ const getDIET = async (req,res ) => {
 
 
 module.exports = {getDIET}
+
+
+
