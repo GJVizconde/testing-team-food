@@ -1,6 +1,9 @@
 const { getAllRecipes } = require("../controllers/getAllRecipes")
 const { getRecipesByName } = require("../controllers/getRecipesByName")
-const {getRecipesById} = require("../Controllers/getRecipesById")
+const {getRecipesById} = require("../controllers/getRecipesById");
+const {GetbyIdDB} = require("../controllers/getRecipesByIdDB");
+const {PostNewReceta} = require("../controllers/POSTRecipesDB");
+
 
 const getRecipes = async (req, res) => {
   const { name } = req.query;
@@ -18,8 +21,7 @@ const getRecipes = async (req, res) => {
 const getById =  async (req,res)  => {
 
   const {id} =  req.params
-  console.log(id)
-
+ 
   try {
     const result = await getRecipesById(id)
 
@@ -33,10 +35,48 @@ const getById =  async (req,res)  => {
 
 }
 
+// handler GETByIdDB>
+
+const getByIdDB = async (req,res) => {
+  const {id} =  req.params
+  try {
+    const result = await GetbyIdDB(id)
+
+    res.status(200).json(result)
+    
+  } catch (error) {
+    res.status(400).json({error:error});
+    
+  }
+
+}
+
+// handler POST by DB>
+
+const PostReceta = async (req,res) => {
+  const { name, image, healthScore, summary, steps } =
+		req.body;
+    
+  
+  try {
+    const result = await  PostNewReceta(name, image, healthScore, summary, steps)
+
+    res.status(200).json(result)
+  } catch (error) {
+    res.status(400).json({error:error});
+    
+  }
+}
+
+// handler GET DIET >
+
+
 
 
 
 module.exports = {
     getRecipes,
     getById,
+    getByIdDB,
+    PostReceta,
   };
