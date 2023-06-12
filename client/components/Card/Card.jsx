@@ -11,7 +11,7 @@ const Card = (props) => {
 	return (
 		<>
 			{side % 2 === 1 ? (
-				<div className=' bg-white dark:bg-sky-950 w-4/5 shadow-[4px_4px_5px_3px_rgba(0,0,0,0.2)] dark:shadow-[4px_4px_5px_3px_rgba(179, 179, 179, 0.2)] dark:text-amber-400 m-auto flex p-7  '>
+				<div className=' bg-white dark:bg-gray-800 w-4/5 shadow-[4px_4px_5px_3px_rgba(0,0,0,0.2)] dark:shadow-[4px_4px_5px_3px_rgba(179, 179, 179, 0.2)] dark:text-amber-400 m-auto flex p-7  '>
 					<img
 						src={img}
 						alt={id}
@@ -29,7 +29,7 @@ const Card = (props) => {
 					</div>
 				</div>
 			) : (
-				<div className=' bg-white w-4/5 dark:bg-sky-950 dark:text-amber-400 shadow-[4px_4px_5px_3px_rgba(0,0,0,0.2)] m-auto flex p-7 dark:shadow-[4px_4px_5px_3px_rgba(179, 179, 179, 0.2)] '>
+				<div className=' bg-white w-4/5 dark:bg-gray-800 dark:text-amber-400 shadow-[4px_4px_5px_3px_rgba(0,0,0,0.2)] m-auto flex p-7 dark:shadow-[4px_4px_5px_3px_rgba(179, 179, 179, 0.2)] '>
 					<div className='pl-5 pr-5'>
 						<h2 className=' text-2xl text-end border-b-2 tracking-[0.2rem] dark:text-white dark:hover:text-aqua-400  border-slate-400 cursor-pointer hover:text-orange-400'>
 							{name}
