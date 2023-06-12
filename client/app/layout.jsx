@@ -17,9 +17,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
-			<ReduxProvider>
-				<body className={roboto.className}>{children}</body>
-			</ReduxProvider>
+			<body className={roboto.className}>
+				<ReduxProvider>{children}</ReduxProvider>
+			</body>
 		</html>
 	);
 }
